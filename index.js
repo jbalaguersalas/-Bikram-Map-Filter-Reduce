@@ -94,11 +94,58 @@ const inventory = [
     price: 1
   }
 ];
-const precioelevado = inventory
+const result6 = inventory
   .filter((item) => item.price > 300)
   .map((item) => item.name);
 
-    console.log(precioelevado);
+    console.log(result6);
 //7.
-let numeros= [39, 2, 4, 25, 62,]
+let numeros3= [39, 2, 4, 25, 62,]
 
+const result7 =numeros3.reduce((acumulado, num) => acumulado * num, 1 )
+console.log(result7)
+
+//8.
+const sentenceElements = [
+  'Me',
+  'llamo',
+  `Jose`,
+  'y',
+  'quiero',
+  'sentir',
+  'la',
+  'fuerza',
+  'con',
+  'javascript'
+];
+
+const result8 = sentenceElements.reduce ((acumulado, palabra)=> acumulado + ` ` + palabra )
+console.log(result8)
+//9.
+const books = [
+  {
+    name: ' JS for dummies',
+    author: 'Emily A. Vander Veer',
+    price: 20,
+    category: 'code'
+  },
+  {
+    name: 'Don Quijote de la Mancha',
+    author: 'Cervantes',
+    price: 14,
+    category: 'novel'
+  },
+  {
+    name: 'Juego de tronos',
+    author: 'George R. Martin',
+    price: 32,
+    category: 'Fantasy'
+  },
+  {
+    name: 'javascript the good parts',
+    author: 'Douglas Crockford',
+    price: 40,
+    category: 'code'
+  }
+];
+const result9 = books.reduce ((acumulado, elementos)=> acumulado)
