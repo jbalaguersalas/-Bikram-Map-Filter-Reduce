@@ -148,4 +148,8 @@ const books = [
     category: 'code'
   }
 ];
-const result9 = books.reduce ((acumulado, elementos)=> acumulado)
+const result9 = books
+.filter ((codigo)=>codigo.category === `code`)
+.reduce ((acumulado, precio)=>precio.price + precio.price, 0 )
+
+console.log(result9)
