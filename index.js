@@ -94,7 +94,11 @@ const inventory = [
     price: 1
   }
 ];
+const precioelevado = inventory
+  .filter((item) => item.price > 300)
+  .map((item) => item.name);
 
+    console.log(precioelevado);
 //7.
 let numeros= [39, 2, 4, 25, 62,]
 
