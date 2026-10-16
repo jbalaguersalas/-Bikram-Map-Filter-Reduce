@@ -94,4 +94,5 @@ const inventory = [
     price: 1
   }
 ];
-const result6 
+//6.
+const inventory 
