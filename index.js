@@ -150,6 +150,6 @@ const books = [
 ];
 const result9 = books
 .filter ((codigo)=>codigo.category === `code`)
-.reduce ((acumulado, precio)=>precio.price + precio.price, 0 )
+.reduce ((acumulado, precio)=>acumulado + precio.price, 0 )
 
 console.log(result9)
