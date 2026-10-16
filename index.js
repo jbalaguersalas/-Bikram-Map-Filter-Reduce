@@ -94,5 +94,7 @@ const inventory = [
     price: 1
   }
 ];
-//6.
-const inventory 
+
+//7.
+let numeros= [39, 2, 4, 25, 62,]
+
